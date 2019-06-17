@@ -1,5 +1,8 @@
 'use strict';
 
 function collectSameElements(collectionA, collectionB) {
-  return '实现练习要求，并改写该行代码。';
+  const flatB = collectionB.flat();
+  const result = collectionA.map(a => flatB.find(b => b === a));
+
+  return result.filter(el => el);
 }
